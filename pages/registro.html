@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="button-container">
+            <a href="index.html" class="arcade-button">
+                <img src="../img/Button.png" alt="Button 1">
+                <span class="button-text">Principal</span>
+            </a>
+            <a href="torneios.html" class="arcade-button">
+                <img src="../img/Button.png" alt="Button 2">
+                <span class="button-text">Torneios</span>
+            </a>
+            <a href="registro.html" class="arcade-button">
+                <img src="../img/Button.png" alt="Button 3">
+                <span class="button-text">Registro</span>
+            </a>
+            <a href="salao.html" class="arcade-button">
+                <img src="../img/Button.png" alt="Button 4">
+                <span class="button-text">Salão da Fama</span>
+            </a>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="news-container">
+            <p class="text-warning">Registre aqui seu torneio para ser exibido no site, para questão de segurança você deverá conversar com a staff antes do torneio ser aprovado.</p>
+            <form class="registro-form">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+        
+                <label for="rank">Rank Máximo:</label>
+                <input type="text" id="rank" name="rank" required>
+        
+                <label for="datahora">Data e Hora:</label>
+                <input type="datetime-local" id="datahora" name="datahora" required>
+        
+                <label for="link">Link:</label>
+                <input type="url" id="link" name="link" required>
+        
+                <label for="discord">Nome no Discord:</label>
+                <input type="text" id="discord" name="discord" required>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+    </main>
+    
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/background.png'); /* Background image path */
+    background-size: cover; /* Ensures the background covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+/* Header Styles */
+header {
+    background-color: #332f2f; /* Fixed dark grey background */
+    padding: 20px 0; /* Adds padding to the top and bottom */
+    display: flex;
+    justify-content: center; /* Centers the button container horizontally */
+    align-items: center; /* Centers the button container vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions the header at the top of the screen */
+    z-index: 10; /* Ensures the header stays above other content */
+    height: 80px; /* Fixed height for the header */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Takes up remaining space */
+    margin-top: 80px; /* Pushes content down to account for the fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Arcade Button Styles */
+.arcade-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative; /* Needed for absolute positioning of text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arcade-button img {
+    width: 100px; /* Button size */
+    height: 100px; /* Button size */
+    display: block; /* Ensures the image behaves as a block element */
+}
+
+.arcade-button .button-text {
+    position: absolute; /* Positions text on top of the button */
+    color: white; /* White text */
+    font-size: 11px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center;
+    pointer-events: none; /* Ensures the text doesn't interfere with button clicks */
+}
+
+.arcade-button:hover {
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* News Container */
+.news-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width for readability */
+    max-height: calc(102vh - 300px); /* Adjust height to fit within the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(41, 37, 37, 0.8); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 5px; /* Adds spacing between news and pagination */
+    padding: 20px;
+}
+
+
+
+
+/* News Block Styles */
+.news-block {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 15px; /* Space between news blocks */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.news-block h3 {
+    margin: 0 0 10px; /* Title spacing */
+    font-size: 18px;
+    color: #333; /* Dark text color */
+}
+
+.news-block p {
+    margin: 0;
+    font-size: 14px;
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between page links */
+    margin-top: 20px;
+    width: 100%; /* Full width */
+    position: sticky; /* Stick to the bottom */
+    bottom: 0; /* Position at the bottom */
+    background-color: rgba(43, 43, 43, 0.9); /* Semi-transparent background */
+    padding: 10px 0; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.page-link {
+    text-decoration: none;
+    color: #a8a8a8; /* Dark text color */
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Border for links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #332f2f; /* Dark background on hover */
+    color: white; /* White text on hover */
+}
+
+.page-link.active {
+    background-color: #332f2f; /* Dark background for active page */
+    color: white; /* White text for active page */
+}
+
+
+/* Estilos do formulário */
+.registro-form {
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #16131370;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registro-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.registro-form input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.registro-form input[type="datetime-local"] {
+    font-family: sans-serif;
+}
+
+.registro-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f52929;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registro-form button:hover {
+    background-color: #220c0c;
+}
+
+
+.text-warning{
+    color: white;
+    width: 70%;
+    justify-self: center;
+}
